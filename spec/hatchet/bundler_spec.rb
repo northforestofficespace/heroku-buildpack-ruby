@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "Bundler" do
   it "deploys with version 2.x" do
     before_deploy = Proc.new do
-      run!(%Q{echo "ruby '2.5.5'" >> Gemfile})
+      run!(%Q{echo "ruby '2.5.7'" >> Gemfile})
       run!(%Q{printf "\nBUNDLED WITH\n   2.0.1\n" >> Gemfile.lock})
     end
 
