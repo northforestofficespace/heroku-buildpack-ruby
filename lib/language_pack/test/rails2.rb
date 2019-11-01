@@ -20,8 +20,8 @@ class LanguagePack::Rails2
 
   def prepare_tests
     # need to clear db:create before db:schema:load_if_ruby gets called by super
-    topic "Clearing #{db_test_tasks_to_clear.join(" ")} rake tasks"
-    clear_db_test_tasks
+    # topic "Clearing #{db_test_tasks_to_clear.join(" ")} rake tasks"
+    # clear_db_test_tasks
     super
   end
 
